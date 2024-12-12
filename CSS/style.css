@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* -------Navbar------ */
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+
+}
+
+
+nav img{
+    width: 50px;
+    height: 50px;
+    
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+nav{
+    background-color: #548854;
+    display: flex;
+    justify-content:  space-between;
+    margin: 0px;
+    padding: 5px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+li:hover{
+    cursor: pointer;
+    /* font-weight: bold; */
+    border-bottom: 2px solid rgb(15, 57, 15);
+    transition: border-bottom .9s;
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.user-profile img{
+    border-radius: 50%;
+    border: 3px solid rgb(10, 223, 242);
+}
+
+.user-profile label{
+    font-size: 12px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    direction: flex;
+    flex-direction: column;
+}
+
+/* ---------------Create a post ------------------------ */
+
+.create-posts{
+    height: 350px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+.imageupload-submit{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 1%;
+
+}
+
+form{
+    
+    height: 100%;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    border: solid #548854;
+    
+}
+
+h2{
+    color: #548854;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.btn{
+    background-color:#548854;
+    padding: 1%;    
+}
+textarea:hover{
+    height: 100%;
+    width: 100%;
+    border: solid red;
+}
+label{
+    border: solid #548854;
+    border-radius: 2%;
+    background-color: azure;
+    color: #548854;
+}
+
+label:hover{
+    
+    border-radius: 2%;
+    background-color:#062006;
+    padding: 1%;  
+    color: white; 
+}
+.btn:hover{
+    background-color:#062006;
+    padding: 1%;  
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    ul{
+        flex-direction: column;
+    }
+
+}
