@@ -139,6 +139,195 @@ label:hover{
 }
 
 
+/* ----------------People you may know------------------------- */
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+
+    background-color: white;
+    height: 350px;
+    
+    gap: 10%;
+    
+}
+
+.profile1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+.profile2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    background-color: white;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+}
+.profile3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+     
+}
+.profile4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+   
+}
+.profile5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+
+.profile6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+.profile7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+.profile8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+.profile9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+    
+}
+.profile10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    
+    border: solid;
+    border-color: #548854;
+
+    padding: 5%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid;
+    border-color: aqua;
+}
+button{
+    background-color:#548854;
+    padding: 1%;  
+}
+button:hover{
+background-color:#062006;
+padding: 1%;  
+color: white; 
+}
+
+
+
+
+
+
+
+
 
 
 
