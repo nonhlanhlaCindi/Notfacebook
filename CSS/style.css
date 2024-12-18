@@ -150,6 +150,7 @@ label:hover{
     height: 350px;
     
     gap: 10%;
+    margin: 2%;
     
 }
 
@@ -321,12 +322,110 @@ padding: 1%;
 color: white; 
 }
 
+/* --------------------Posts---------------------------------------------------- */
+
+.post{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+    border: solid;
+    border-color: #548854;
+}
+
+.profile-datecreated{
+    height: 130px;
+
+    display: flex;
+    flex-direction: row;
+    
+    
+    border-radius: 10px 40px 10px 40px ;
+    box-shadow: 5px 10px 5px 10px #548854;
+}
+
+.img-post{
+    border: none;
+    border-radius: none;
+    background-color: none;
+    color: #548854;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;  
+    
+}
 
 
+.img-post{
+    width: 70%;
+    height: 300px;
+
+    background-color: aqua;
+
+}
+
+.img-post img{
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+.like-comment-share{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    margin: 2%;
+}
+
+.like-comment-share-buttons{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.caption {
+    margin: 2%;
+}
+
+.post2{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+    border: solid;
+    border-color: #548854;
+
+}
+
+.post3{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+    border: solid;
+    border-color: #548854;
+
+}
 
 
+/* ----------------------------Footer----------------------------------------------------- */
 
+.footer{
 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    background-color: #548854;
+}
 
 
 
