@@ -1,0 +1,153 @@
+
+
+img{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    border-color: #548854;
+    
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 550px;
+    border: solid;
+    border-color: #548854;
+    border-radius: 25px;
+    margin: 10%;
+    gap: 10px;
+    box-shadow: 2px 4px 2px 4px;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.FormInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 15px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+input{
+    border-width: 0 0 2px;
+}
+
+button{
+    background-color:#548854;
+    padding: 1%;  
+    width: 50%;  
+}
+
+button:hover{
+    background-color:white;
+    padding: 1%;  
+      
+}
+.loginbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.forgotpassword{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.txtregister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    color: #052805;
+}
+
+.txtlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 320px; 
+  
+    }
+
+    .logo img {
+      
+        width: 80px; 
+    }
+
+    .Registerbutton button {
+        width: 100%; /* Make button full width on mobile */
+        padding: 15px;
+    }
+
+    .txtregister a {
+        font-size: 14px;
+    }
+
+    .main-container {
+        margin-bottom: 100px;
+     
+       }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 70px; /* Even smaller logo for very small screens */
+   margin-top: 40px;
+   margin-bottom: 20px;
+    }
+
+    .h1 {
+        font-size: 39px; /* Smaller header */
+   margin-top: -15px;
+    }
+
+    .txtregister p {
+        font-size: 15px; /* Smaller text */
+        margin-top: -20px;
+    }
+
+    .FormInfo input {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .Registerbutton button {
+        font-size: 14px; /* Button text smaller on mobile */
+    }
+
+    .txtregister a {
+        font-size: 12px; /* Even smaller links */
+       
+    }
+
+    .main-container {
+        margin-top: 99px;
+ height: 450px;
+    }
+    .FormInfo{
+        margin-top: 5px;
+    }
+}
