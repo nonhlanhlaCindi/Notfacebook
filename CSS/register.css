@@ -11,12 +11,12 @@ img{
     flex-direction: column;
     justify-content: center;
     width: 60%;
-    height: 700px;
+    height: 750px;
     border: solid;
     border-color: #548854;
     border-radius: 25px;
     margin: 10%;
-    gap: 20px;
+    gap: 10px;
     box-shadow: 2px 4px 2px 4px;
     
 }
