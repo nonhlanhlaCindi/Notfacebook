@@ -210,4 +210,87 @@ button:hover {
 .add-friend:hover {
     background-color: #45a049;
 }
- 
+ /* testing */
+ /* Status Section */
+.status-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Post Block */
+.status-post {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Header (User Info) */
+.status-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.status-user-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.status-time {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Status Text */
+.status-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Status Footer (Like/Comment buttons) */
+.status-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.like-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.like-btn:hover {
+    background-color: #45a049;
+}
+
+.comment-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.comment-btn:hover {
+    background-color: #1976D2;
+}
