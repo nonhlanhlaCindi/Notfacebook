@@ -13,13 +13,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 45%;
-    max-width: 400px;
+    width: 33%;
+    max-width: 45%;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.2);
     background-color: white;
     gap: 10px;
+    margin-top: 100px;
 }
 
 /* -------logo------------------- */
@@ -44,7 +45,7 @@ body {
 .FormInfo {
     display: flex;
     flex-direction: column;
-    gap: 5px; 
+    gap: px; 
 }
 
 .FormInfo label {
@@ -77,12 +78,13 @@ button {
     background-color: #548854;
     color: white;
     padding: 10px;
-    width: 100%;
+    width: 90%;
     border: none;
-    border-radius: 5px;
-    font-size: 15px;
+    border-radius: 25px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin: 5%;
 }
 
 button:hover {
@@ -98,6 +100,7 @@ button:hover {
     gap: 5px;
     font-size: 14px;
     color: #548854;
+    margin: 0;
 }
 
 .txtregister a {
@@ -132,7 +135,8 @@ p:hover{
 }
 
 /* --------------------Media Queries------------------------------ */
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
     .main-container {
         width: 90%;
         padding: 15px;
@@ -146,7 +150,7 @@ p:hover{
     button {
         padding: 12px;
     }
-}
+} 
 
 @media (max-width: 480px) {
     .main-container {
@@ -165,4 +169,44 @@ p:hover{
     .FormInfo label, .inputinfo, .txtregister {
         font-size: 12px;
     }
+} */ 
+
+/* --------------------Media Queries------------------------------ */
+
+
+
+@media (max-width:480px){
+    .main-container{
+        width: 90%;
+        max-width: 90%;
+        margin: 10%;
+        height: 100vh;
+    }
+} 
+
+@media (min-width:768px) and (max-width:1024px){
+    .main-container{
+        width: 80%;
+        max-width: 90%;
+        margin: 10%;
+        height: 65vh;
+        
+    }
+    /* .logo img{
+        margin-top: -150%;
+    }
+    h1{
+        margin-top: -60%;
+    }
+    p{
+        margin-top: -50%;
+    }
+
+    
+    form{
+        margin-bottom: -100%;
+        margin-top: -5%;
+        
+        
+    } */
 }
