@@ -1,142 +1,212 @@
-img{
-    width: 50px;
-    height: 50px;
-    border: solid;
-    border-radius: 50%;
-    border-color: #548854;
+/* --------body--------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.main-container{
+/* ---------main div--------- */
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    height: 720px;
-    border: solid;
-    border-color: #548854;
+    width: 33%;
+    max-width: 45%;
+    padding: 20px;
     border-radius: 25px;
-margin-top: 30px;
+    box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
     gap: 10px;
-    box-shadow: 2px 4px 2px 4px;
-    
+    margin-top: 100px;
 }
-.logo{
+
+/* -------logo------------------- */
+.logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-bottom: 5px;
+   
 }
 
-.FormInfo{
+.logo img {
+    width: 80px;
+    height: 80px;
+    border: solid;
+    border-radius: 50%;
+    border-color: rgb(5, 24, 5);
+}
+
+/* ---------Form--------------------- */
+.FormInfo {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    gap: 15px;
+    gap: px; 
 }
-body{
-    display: flex;
-    justify-content: center;
-    
+
+.FormInfo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(5, 24, 5);
+    margin-bottom: 5px;
 }
 
 input{
-    border-width: 0 0 2px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #548854;
+    outline: none;
+    background-color: transparent;
+    
 }
 
-button{
-    background-color:#548854;
-    padding: 1%;  
-    width: 50%;  
+input:hover {
+    border-color:  rgb(172, 23, 73);
 }
 
-button:hover{
-    background-color:white;
-    padding: 1%;  
-      
+input:focus {
+    border-color: blue;
 }
-.Registerbutton{
+
+/* --------button------------------- */
+button {
+    background-color: #548854;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5%;
+}
+
+button:hover {
+    background-color:rgb(10, 46, 10);
+    transform: scale(1.06); 
+}
+
+/* -------------text------------------ */
+.txtregister {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.forgotpassword{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.txtregister{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #548854;
+    margin: 0;
 }
 
-h1{
-    color: #021202;
+.txtregister a {
+    color: #548854;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .main-container {
-        width: 320px; 
-        height: 800px;
+.txtregister a:hover {
+    color: #052805;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #052805;
+    margin: 0;
+    transition: transform 1s ease-in-out; 
+}
   
-    }
+h1:hover {
+    transform: rotate(360deg); 
+    color: rgb(71, 21, 3);
+  }
+  
 
-    .logo img {
-      
-        width: 80px; 
-    }
+p:hover{
+    font-size: 20px;
+    color: red;
 
-    .Registerbutton button {
-        width: 100%; /* Make button full width on mobile */
+}
+
+/* --------------------Media Queries------------------------------ */
+
+/* @media (max-width: 768px) {
+    .main-container {
+        width: 90%;
         padding: 15px;
     }
 
-    .txtregister a {
-        font-size: 14px;
+    .logo img {
+        width: 70px;
+        height: 70px;
     }
 
-    .main-container {
-        margin-bottom: 100px;
-     
-       }
-}
+    button {
+        padding: 12px;
+    }
+} 
 
 @media (max-width: 480px) {
-    .logo img {
-        width: 70px; /* Even smaller logo for very small screens */
-   margin-top: 5px;
-   margin-bottom: 20px;
-    }
-
-    .txtregister h1 {
-        font-size: 39px; /* Smaller header */
-        margin-top: -20px;
-    }
-
-    .txtregister p {
-        font-size: 15px; /* Smaller text */
-        margin-top: -20px;
-    }
-
-    .FormInfo input {
-        font-size: 14px; /* Adjust text size */
-    }
-
-    .Registerbutton button {
-        font-size: 14px; /* Button text smaller on mobile */
-    }
-
-    .txtregister a {
-        font-size: 12px; /* Even smaller links */
-       
-    }
-
     .main-container {
- height: 650px;
+        width: 95%;
     }
-    .FormInfo{
-        margin-top: 5px;
+
+    .logo img {
+        width: 60px;
+        height: 60px;
     }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .FormInfo label, .inputinfo, .txtregister {
+        font-size: 12px;
+    }
+} */ 
+
+/* --------------------Media Queries------------------------------ */
+
+
+
+@media (max-width:480px){
+    .main-container{
+        width: 90%;
+        max-width: 90%;
+        margin: 10%;
+        height: 100vh;
+    }
+} 
+
+@media (min-width:768px) and (max-width:1024px){
+    .main-container{
+        width: 80%;
+        max-width: 90%;
+        margin: 10%;
+        height: 65vh;
+        
+    }
+    /* .logo img{
+        margin-top: -150%;
+    }
+    h1{
+        margin-top: -60%;
+    }
+    p{
+        margin-top: -50%;
+    }
+
+    
+    form{
+        margin-bottom: -100%;
+        margin-top: -5%;
+        
+        
+    } */
 }
