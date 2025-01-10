@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* ------------body----------------- */
+body{
+    margin: 0;
+    padding: 0;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -17,10 +21,6 @@ nav {
     padding: 10px;
    border-bottom: solid;
    border-color: #052805;
-}
-
-.unorderedList-container {
-   
 }
 
 .unorderedList {
@@ -80,161 +80,186 @@ nav {
     color: white; 
 }
 
-/* --------------------div for all the people cards----------- */
+/* -----------------Status view section-------------------------- */
 
-.people-list {
+.status-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    overflow-x: auto;
-    overflow-y: hidden; 
-    gap: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    scroll-behavior: smooth; 
-}
-
-.people-list::-webkit-scrollbar {
-    height: 8px; 
-}
-
-.people-list::-webkit-scrollbar-thumb {
-    background-color: #4CAF50; 
-    border-radius: 10px; 
-}
-
-.people-list::-webkit-scrollbar-track {
-    background-color: #e0e0e0; 
-}
-
-
-.main{
-    display: flex;
-    flex-direction: column;
-}
-
-/* --------------------------Individual person card------------------- */
-.person-card {
-    width: 200px;
-    height:200px ;
-    background-color: #fff;
-    border-radius: 10px;
+    justify-content: row;
+    width: auto;
+    margin: 1%;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex-shrink: 0; 
+    overflow: scroll;
+}
+.status-container-container{
+    background-color: red;
+}
+
+.status-container::-webkit-scrollbar{
+
+    overflow-x: 150px ;
+
+}
+
+.status{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-/*----------------------- Profile image----------------------*/
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover; 
-    margin-bottom: 10px;
-}
-
-/* --------------------Person information below the image --------------*/
-.person-info h3 {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-.person-info .last-seen {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 15px;
-}
-
-/* ------------------------Add Friend ------------------------ */
-.add-friend {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.add-friend:hover {
-    background-color: #45a049;
-}
- 
-
-
-/* -----------------Status-------------------------- */
-.status-section {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    margin: 20px auto;
-    border: solid #052805;
-}
-.btn{
-    display: flex;
     justify-content: center;
+    width: 60px;
+    height: 100px;
+    background-color:lightgrey;
+    margin: 1%;
+    border-radius: 15%;
+}
+.status-content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height:120px;
+    border-radius: 10%;
+}
+.status-content p{
+    color:aquamarine;
+    margin-bottom: -15px;
    
 }
-.submitbtn{
-    width: 30%;
-    background-color: white;
-    color: #052805;
-    border-radius: 25px;
-    border: solid;
-    border-color: #052805;
+.status-content img{
+    height: 80px;
+    border-radius: 40%;
+    border: solid 3px;
+    border-color: aquamarine;
+    width:80px;
+    margin-bottom: -15px;
 }
 
-.status-section h2 {
-    text-align: center;
-    margin-bottom: 15px;
+/* -----------------Status post section-------------------------- */
+.status-section {
+   
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    border: solid #052805;
+    padding: 2px;
+    
 }
 
 #status-text {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    resize: vertical;
+    
+}
+.post-img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.post-img img{
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+
 }
 
-.word-count {
-    font-size: 14px;
-    color: #888;
-    text-align: right;
-    margin-top: 5px;
+.post-img h3{
+    color: aquamarine;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+#status-form{
+    padding: 20px;
+}
+.btn button{
+    color: #052805;
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.btn button:hover{
+    background-color: #052805;
     color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 25%;
+    height: 50px;
+    border-radius: 15px;
+}
+.status-section h2{
+    color: #052805;
+    
 }
 
-button:hover {
-    background-color: #45a049;
+/* ----------main-person-div------------ */
+.main-person-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
-
-#status-preview {
-    margin-top: 20px;
+.main-person-div::-webkit-scrollbar{
+    width: 0%;
+}
+.people{
+    
+    padding: 20px;
+    margin: 10px;
+}
+.profile-img img{
+    width: 50%;
+    border-radius: 50%;
+    border: solid;
+    border-color: #052805;
+   
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.cards{
+    border-radius: 15px;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+                    -webkit-box-shadow: 3px 3px 3px #ccc;
+                    box-shadow: 3px 3px 3px #ccc;
+    width: 250px;
+    background-color: white;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: none;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-info h3{
+    color: #052805;
+}
+.card-info p{
+    margin-top: -10px;
+    color: #052805;
+}
+.card-info button{
+    margin-bottom: 15px;
+    height: 30px;
+    color: #052805;
+    border-radius: 15px;
+    border-color: #052805;
+    width: 100px;
+}
+
+.card-info button:hover{
+    margin-bottom: 15px;
+    height: 30px;
+    color: white;
+    border-radius: 15px;
+    border-color: #052805;
+    width: 100px;
+    background-color: #052805;
 }
 
 /* -----------footer---------------------- */
@@ -247,7 +272,6 @@ footer{
 .footer-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 90px;
@@ -265,16 +289,9 @@ footer{
     border-radius: 50%; 
     border: solid;
     border-color: #052805;
-    margin-bottom: -15px; 
+    margin-bottom: -10px; 
 }
 
-.footer-text {
-    font-size: 14px;
-    line-height: 1.5;
-    max-width: 400px; 
-    margin-top: 10px;
-
-}
 .footer-div p{
     color: #052805;
 }
@@ -283,159 +300,55 @@ footer{
     margin: 5px 0;
 }
 
-
-
-
-/* --------------------------- Media Queries-----------------------
-@media (max-width: 768px) {
-    .nav-links {
-        gap: 15px; 
-    }
-
-    .logo img {
-        width: 40px; 
-    }
-
-    .nav-links a {
-        font-size: 14px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-links {
-        gap: 10px; 
-    }
-
-    .logo img {
-        width: 35px;
-    }
-
-    .nav-links a {
-        font-size: 14px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .status-section {
-        width: 90%;
-    }
-
-    #status-text {
-        font-size: 14px;
-    }
-} */
-
-
 /* --------------------------- Media Queries-----------------------> */
 
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:150px) and (max-width:480px){
 
-.main-main{
-    width: 80%;
-    height: 100vh;
+/* ----navbar------ */
+body{
+    width: auto;
 }
-/* ----------navbar-------------- */
-    .nav-options {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-direction: column;
-        padding: 10px 20px;
-        background-color:white; 
-        color: white;
-        border-bottom: 5px;
+.status-content{
+    height: 60px;
+}
     
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        border-bottom: solid;
-        border-color: #052805;
-        height: 100%;
-    }
-    
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        padding: 10px;
-        border: 3px solid #052805; 
-        border-radius: 50%; 
-        background-color: white;
-        transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out; 
-    }
-    
-    .logo img {
-        
-        width: 60px;
-        border-radius: 50%; 
-        border-color: #052805;
-        margin-right: auto;
-    }
-    
-    .logo:hover {
-        transform: rotate(360deg) scale(1.1); 
-        background-color: #052805; 
-        border-color: #052805; 
-    }
-    
-    .nav-links {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 20%;
-        margin: 0;
-        padding: 0;
-        
-    }
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   border-bottom: solid;
+   border-color: #052805;
+   width: auto;
+  
+  
+}
+.unorderedList {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0; 
+    padding: 30px 40px;
+    font-weight: bold;
+    text-align: right;
+    align-items: flex-start;
+}
 
-    .unorderedList{
-        padding: 15%;
-    }
-    
-    .nav-links:hover{
-        transform: scale(1.09);
-    }
-    .nav-links li {
-        display: flex;
-    }
-    
-    .nav-links a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        padding: 10px 20px;
-        background-color: white; 
-        color: #052805; 
-        border-radius: 20px; 
-        transition: background-color 0.3s, color 0.3s;
-    }
-    
-    .nav-links a:hover {
-        background-color: #052805; 
-        color: white; 
-    }
-    
-    .logo {
-        display: flex;
-       
-    }
-    
-    .logo img {
-        width: 50px;
-        height: auto;
-    }
-    .logo-div{
-        display: flex;
-        justify-content: start;
-        width: 100%;
-    }
+.unorderedList-container{
+    align-self: flex-end;
+    overflow: scroll;  
+}
 
-    /* ------footer---- */
+.logo {
+
+    align-self: flex-start;
+}
+   
+/* ------footer---- */
 
     footer{
-        width: 90%;
-
+        width: 100%;
+        margin-top: 5%;
     }
 
 }
