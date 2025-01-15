@@ -10,52 +10,48 @@
 <body>
 
     <div class="main-container">
-
         <div class="logo">
-            <img src="../RESOURCES/image.png">
+            <img src="../RESOURCES/image.png" alt="Logo">
         </div>
-
-        
-        <form action="#">
-
+    
+        <form id="registrationForm">
             <div class="txtregister">
                 <h1>Register</h1>
             </div>
-
+    
             <div class="txtregister">
                 <p>Enter your details to register!!!!!</p>
             </div>
-
+    
             <div class="FormInfo">
-        
-                <label for="Username">Username</label>
-                <input type="text" placeholder="Create your username">
-        
-                <label for="Email address">Email address</label>
-                <input type="text" placeholder="Enter your email address">
-
-                <label for="Cellphone number">Cell phone number</label>
-                <input type="text" placeholder="Enter your Cellphone number">
-
-                <label for="Create password">Create Password</label>
-                <input type="text" placeholder="Create your Password">
-
-                <label for="Repeat Password">Confirm Password</label>
-                <input type="text" placeholder="Enter your password again">
-        
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Create your username">
+    
+                <label for="email">Email address</label>
+                <input type="text" id="email" placeholder="Enter your email address">
+    
+                <label for="cellphone">Cell phone number</label>
+                <input type="text" id="cellphone" placeholder="Enter your Cellphone number">
+    
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="Create your Password">
+    
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Enter your password again">
+    
                 <div class="Registerbutton">
-                    <button><a href="./notfacebook.html">Register</a></button>
+                    <button type="submit">Register</button>
                 </div>
-        
+    
                 <div class="txtregister">
                     <span>Already have an account?</span><a href="/index.html">Login</a>
                 </div>
             </div>
-        
+           
         </form>
     </div>
-        
-            
+     
+<script src="/JAVASCRIPT/register.js"></script>     
 </body>
 </html>
 
