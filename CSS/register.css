@@ -136,45 +136,6 @@ p:hover{
 
 /* --------------------Media Queries------------------------------ */
 
-/* @media (max-width: 768px) {
-    .main-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .logo img {
-        width: 70px;
-        height: 70px;
-    }
-
-    button {
-        padding: 12px;
-    }
-} 
-
-@media (max-width: 480px) {
-    .main-container {
-        width: 95%;
-    }
-
-    .logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .FormInfo label, .inputinfo, .txtregister {
-        font-size: 12px;
-    }
-} */ 
-
-/* --------------------Media Queries------------------------------ */
-
-
-
 @media (max-width:480px){
     .main-container{
         width: 90%;
@@ -192,21 +153,5 @@ p:hover{
         height: 65vh;
         
     }
-    /* .logo img{
-        margin-top: -150%;
-    }
-    h1{
-        margin-top: -60%;
-    }
-    p{
-        margin-top: -50%;
-    }
-
-    
-    form{
-        margin-bottom: -100%;
-        margin-top: -5%;
-        
-        
-    } */
+  
 }
