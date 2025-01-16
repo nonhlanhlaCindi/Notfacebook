@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Facebook</title>
     <link rel="stylesheet" href="../CSS/style.css">
+  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -19,7 +21,7 @@
             <li class="nav-links"><a href="/HTML/notfacebook.html">Home</a></li>
                 <li class="nav-links"><a href="../HTML/messages.html">Messages</a></li>
                 <li class="nav-links"><a href="../HTML/profile.html">Profile</a></li>
-                <li class="nav-links"><a href="../index.html">Login</a></li>
+                <li class="nav-links"><a href="http://127.0.0.1:5500/register.html">Login</a></li>
                 <li class="nav-links"><a href="../index.html">Logout</a></li>
         </ul>
     </div>
@@ -222,27 +224,23 @@
 </div>
 
 <div class="status-section">
-
     <h3>Post Status</h3>
-
     <div class="post-img">
-        <img src="../RESOURCES/blank-profile-picture-973460_1280.webp">
-        
+        <img src="../RESOURCES/blank-profile-picture-973460_1280.webp" alt="Profile">
         <h3>Public</h3>
     </div>
 
     <form id="status-form">
-
         <textarea id="status-text" placeholder="Enter your caption here?" rows="2"></textarea>
-
         <div class="btn">
-            <button>Post Status</button>
-    
+            <button type="submit">Post Status</button>
         </div>
-
     </form>
-    
-</div> 
+
+    <div id="statusesContainer">
+        <!-- Posted statuses will appear here -->
+    </div>
+</div>
 
 
 
@@ -258,7 +256,7 @@
 </footer>
 
 
-
+<script src="../JAVASCRIPT/notfacebook.js"></script>
 </body>
 
 

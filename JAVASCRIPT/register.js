@@ -52,7 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // If everything is valid, submit the form
         if (formValid) {
             alert("Registration successful!");
-            window.location.href = "./notfacebook.html"; // Redirect to homepage or dashboard
+            window.location.href = "http://127.0.0.1:5500/HTML/signin.html"; // Redirect to homepage or dashboard
         }
     });
 });
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/login.css">
+    <title>SignIn</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="logo">
+            <img src="../RESOURCES/image.png" alt="App Logo">
+            <h1>Sign In</h1>
+        </div>
+
+        <form class="form-main" id="signInForm">
+            <div class="txtregister">
+                <p>Enter your details to sign in!</p>
+            </div>
+
+            <div class="FormInfo">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+
+                <div class="forgotpassword">
+                    <a href="forgotpassword.html">Forgot password?</a>
+                </div>
+
+                <div class="signInButton">
+                    <button type="submit">Sign In</button>
+                </div>
+
+                <div class="txtregister">
+                    <span>Don't have an account?</span><a href="../register.html">Sign Up</a>
+                </div>
+            </div>
+        </form>
+
+        <div id="error-message" style="color: red; display: none;"></div>
+
+    </div>
+    <script src="/JAVASCRIPT/signin.js" ></script>
+
+</body>
+</html>

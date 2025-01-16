@@ -300,6 +300,7 @@ footer{
     margin: 5px 0;
 }
 
+
 /* --------------------------- Media Queries-----------------------> */
 
 @media (min-width:150px) and (max-width:480px){
@@ -342,18 +343,106 @@ nav {
 .logo {
 
     align-self: flex-start;
+
+}
+
+/* ------status section */
+
+.status-section {
+   
+    border-radius: 8px;
+    width: 95%;
+    margin: auto;
+    border: solid #052805;
+    padding: 2px;
+    
 }
    
 /* ------footer---- */
 
     footer{
-        width: 100%;
+        width: 95%;
         margin-top: 5%;
     }
 
 }
 @media (min-width:768px) and (max-width:1024px){
 
+/* ------status section */
 
+.status-section {
+   
+    border-radius: 8px;
+    width: 95%;
+    margin: auto;
+    border: solid #052805;
+    padding: 2px;
     
 }
+   
+/* ------footer---- */
+
+    footer{
+        width: 95%;
+        margin-top: 5%;
+    }
+
+}
+
+    /* Style the status container */
+#statusesContainer {
+    margin-top: 20px;
+    width: 200px;
+}
+
+/* Style individual status posts */
+.status {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 7g00px;
+}
+
+/* Align profile image and text in the header */
+.status-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style the profile image */
+.status-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Style the public label */
+.status-header h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #052805; /* Use your specified text color */
+}
+
+/* Style the status text */
+.status p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word; /* Ensure long words or links wrap properly */
+}
+
+/* Add a hover effect for better visual feedback */
+.status:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
