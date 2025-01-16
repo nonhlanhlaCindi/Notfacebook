@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainContent.classList.remove("hidden");
 
         // Redirect to the login page after hiding the splash screen
-        window.location.href = "http://127.0.0.1:5500/index.html"; // Replace with your actual login page URL
+        window.location.href = "../HTML/signin.html"; // Replace with your actual login page URL
     }, 3000); // 3000ms = 3 seconds
 });
