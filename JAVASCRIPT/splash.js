@@ -10,4 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
         window.location.href = "../HTML/signin.html";
     }, 5000); 
+
+    
+
 });
