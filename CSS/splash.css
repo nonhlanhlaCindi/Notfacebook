@@ -32,8 +32,8 @@ body {
     display: none;
 }
 
-/* ----------------Animation for the logo ------------------ */
-/* @keyframes fadeIn {
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
         transform: scale(0.9);
@@ -42,4 +42,4 @@ body {
         opacity: 1;
         transform: scale(1);
     }
-} */
+}

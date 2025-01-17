@@ -21,112 +21,31 @@
             <li class="nav-links"><a href="/HTML/notfacebook.html">Home</a></li>
                 <li class="nav-links"><a href="../HTML/messages.html">Messages</a></li>
                 <li class="nav-links"><a href="../HTML/profile.html">Profile</a></li>
-                <li class="nav-links"><a href="http://127.0.0.1:5500/register.html">Login</a></li>
                 <li class="nav-links"><a href="../index.html">Logout</a></li>
         </ul>
     </div>
 </nav>
 
-<div class="status-container">
+<div id="statusesContainer">
+    <!-- Posted statuses will appear here -->
+</div>
 
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1754361773-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024 copy.jpg">
-        </div>
+<div class="status-section">
+    <h3>Post Status</h3>
+    
+     <div class="form-group">
+        <label for="status-image">Upload Image:</label>
+        <input type="file" id="status-image" accept="image/*">
     </div>
     
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1195079303-1024x1024.jpg">
+    <form id="status-form">
+        <textarea id="status-text" placeholder="Enter your caption here?" rows="2"></textarea>
+        <div class="btn">
+            <button type="submit">Post Status</button>
         </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1754361773-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024 copy.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1195079303-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1195079303-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024 copy.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1754361773-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1195079303-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
-    <div class="status-content-container">
-        <div class="status-content">
-            <img src="../RESOURCES/istockphoto-1437816897-1024x1024.jpg">
-        </div>
-    </div>
-
+    </form>
 </div>
+
 
 
 <div class="main-person-div">
@@ -222,28 +141,6 @@
     </div>
         
 </div>
-
-<div class="status-section">
-    <h3>Post Status</h3>
-    <div class="post-img">
-        <img src="../RESOURCES/blank-profile-picture-973460_1280.webp" alt="Profile">
-        <h3>Public</h3>
-    </div>
-
-    <form id="status-form">
-        <textarea id="status-text" placeholder="Enter your caption here?" rows="2"></textarea>
-        <div class="btn">
-            <button type="submit">Post Status</button>
-        </div>
-    </form>
-
-    <div id="statusesContainer">
-        <!-- Posted statuses will appear here -->
-    </div>
-</div>
-
-
-
 
 <footer>
     <div class="footer-div">

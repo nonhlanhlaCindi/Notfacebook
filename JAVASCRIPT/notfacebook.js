@@ -1,37 +1,73 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const statusForm = document.getElementById("status-form");
     const statusText = document.getElementById("status-text");
+    const statusImageInput = document.getElementById("status-image");
     const statusesContainer = document.getElementById("statusesContainer");
 
-    // Event listener for form submission
-    statusForm.addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevent form submission
+    statusForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission refresh
 
-        // Get the status text
-        const status = statusText.value.trim();
+        const caption = statusText.value.trim();
+        const imageFile = statusImageInput.files[0];
 
-        // Check if the status is not empty
-        if (status !== "") {
-            // Create a new status element
-            const statusElement = document.createElement("div");
-            statusElement.classList.add("status");
-
-            // Add the profile image and text to the status element
-            statusElement.innerHTML = `
-                <div class="status-header">
-                    <img src="../RESOURCES/blank-profile-picture-973460_1280.webp" alt="Profile" class="profile-img">
-                    <h4>Public</h4>
-                </div>
-                <p>${status}</p>
-            `;
-
-            // Append the new status to the container
-            statusesContainer.appendChild(statusElement);
-
-            // Clear the textarea after posting
-            statusText.value = "";
-        } else {
-            alert("Please enter a status!");
+        if (!caption && !imageFile) {
+            alert("Please enter a caption or upload an image!");
+            return;
         }
+
+        // Create a new status element
+        const statusElement = document.createElement("div");
+        statusElement.classList.add("status");
+
+        // Add caption if available
+        if (caption) {
+            const captionElement = document.createElement("p");
+            captionElement.textContent = caption;
+            statusElement.appendChild(captionElement);
+        }
+
+        // Add uploaded image if available
+        if (imageFile) {
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                const imageElement = document.createElement("img");
+                imageElement.src = event.target.result;
+                imageElement.alt = "Uploaded Image";
+                statusElement.appendChild(imageElement);
+            };
+            reader.readAsDataURL(imageFile);
+        }
+
+        // Add the new status to the top of the statuses container
+        statusesContainer.prepend(statusElement);
+
+        // Clear the form
+        statusText.value = "";
+        statusImageInput.value = "";
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all "Add Friend" buttons
+    const addFriendButtons = document.querySelectorAll(".card-info button");
+
+    // Add event listeners to each button
+    addFriendButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            // Check if the button has already been clicked
+            if (button.textContent === "Friend Request Sent") {
+                alert("You've already sent a friend request to this person!");
+                return;
+            }
+
+            // Update button text to indicate the friend request is sent
+            button.textContent = "Friend Request Sent";
+
+            // Optional: Disable the button to prevent further clicks
+            button.disabled = true;
+
+            // Log or perform additional actions if needed
+            console.log(`Friend request sent to ${button.parentElement.querySelector("h3").textContent}`);
+        });
     });
 });
