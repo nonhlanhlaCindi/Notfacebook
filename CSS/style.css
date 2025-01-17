@@ -414,12 +414,79 @@ nav {
         width: 95%;
         margin-top: 5%;
     }
-
+.status-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: #548854;
 }
-@media (min-width:768px) and (max-width:1024px){
+}
 
 /* ------status section */
 
+/* Container for all the people cards */
+.people-list {
+    display: flex;
+    overflow-x: auto; /* Horizontal scrolling */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Individual person card */
+.person-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking when scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile image styling (rounded) */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+    margin-bottom: 10px;
+}
+
+/* Person information below the image */
+.person-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.person-info .last-seen {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Add Friend button styling */
+.add-friend {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.add-friend:hover {
+    background-color: #45a049;
+}
+ 
 .status-section {
    
     border-radius: 8px;
@@ -437,7 +504,7 @@ nav {
         margin-top: 5%;
     }
 
-}
+
 
 
 /* -----------status container------------------------- */
