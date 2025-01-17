@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Messages</title>
     <link rel="stylesheet" href="../CSS/messages.css">
 </head>
 <body>
-    Hello, welcome to messsages
+    <div class="main-container">
+        <div class="messages">
+            <h1>Messages</h1>
+            <div class="messages-list">
+               
+                <div class="message-item">
+                    <h3 class="message-sender">Black Panther</h3>
+                    <p class="message-preview">Hey, how are you doing today?</p>
+                    <button class="message-action">Open Message</button>
+                </div>
+                <div class="message-item">
+                    <h3 class="message-sender">Lesego Johnson</h3>
+                    <p class="message-preview">Let's catch up soon!</p>
+                    <button class="message-action">Open Message</button>
+                </div>
+               
+            </div>
+
+         
+            <div class="send-message">
+                <button id="sendMessageBtn">Send New Message</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="messages.js"></script>
 </body>
 </html>

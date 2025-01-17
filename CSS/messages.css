@@ -1,0 +1,83 @@
+
+body {
+    
+    background-color: white;
+    color: #052805;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.messages {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #052805;
+}
+
+.messages-list {
+    margin-top: 20px;
+}
+
+.message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.message-item:hover {
+    background-color: #f0f0f0;
+}
+
+.message-sender {
+    font-weight: bold;
+    color: #052805;
+}
+
+.message-preview {
+    color: #555;
+}
+
+.message-action {
+    margin-top: 10px;
+    background-color: #052805;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.message-action:hover {
+    background-color: #024300;
+}
+
+
+.send-message {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#sendMessageBtn {
+    background-color: #052805;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#sendMessageBtn:hover {
+    background-color: #024300;
+}

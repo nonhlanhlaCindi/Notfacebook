@@ -4,7 +4,11 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
+
+    
+  
 .main {
     display: flex;
     flex-direction: column;
@@ -262,7 +266,7 @@ nav {
 }
 .card-info button{
     margin-bottom: 15px;
-    height: 30px;
+    height: 50px;
     color: #052805;
     border-radius: 15px;
     border-color: #052805;
@@ -271,7 +275,7 @@ nav {
 
 .card-info button:hover{
     margin-bottom: 15px;
-    height: 30px;
+    height: 50px;
     color: white;
     border-radius: 15px;
     border-color: #052805;
@@ -316,6 +320,34 @@ footer{
 .footer-text br {
     margin: 5px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -406,6 +438,9 @@ nav {
     }
 
 }
+
+
+/* -----------status container------------------------- */
 
 #statusesContainer {
     margin-top: 20px;

@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const statusText = document.getElementById("status-text");
     const statusImageInput = document.getElementById("status-image");
     const statusesContainer = document.getElementById("statusesContainer");
+    const addFriendButtons = document.querySelectorAll(".card-info button");
 
     statusForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission refresh
+        e.preventDefault(); 
 
         const caption = statusText.value.trim();
         const imageFile = statusImageInput.files[0];
@@ -45,11 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         statusText.value = "";
         statusImageInput.value = "";
     });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Select all "Add Friend" buttons
-    const addFriendButtons = document.querySelectorAll(".card-info button");
 
     // Add event listeners to each button
     addFriendButtons.forEach((button) => {
@@ -71,3 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+    
+
+
