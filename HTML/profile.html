@@ -2,30 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/profile.css">
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Public Profile</title>
+        <link rel="stylesheet" href="../CSS/profile.css">
+    </head>
 <body>
-
-<div class="main-container">
-    <div class="profile">
-        <h1>Public Profile</h1>
-        <div class="profile-container">
-            <div class="img-div">
-                <img src="../RESOURCES/190504625.jpeg" alt="">
+        <div class="main-container">
+            <div class="profile">
+                <h1>Public Profile</h1>
+                <div class="profile-container">
+                  
+                    <div class="img-div">
+                        <img id="profilePicture" src="../RESOURCES/190504625.jpeg" alt="Profile Picture">
+                    </div>
+                    
+                   
+                    <div class="profile-info">
+                        <h2 id="username">Cindi Nontethelelo</h2>
+                        <p id="bio">Just a girl in in Tech</p> 
+                        <p id="friendCount">Friends: 500</p> 
+    
+                       
+                        <div class="edit-picture">
+                            <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+                            <button id="changePictureBtn">Change Profile Picture</button>
+                            <button id="deletePictureBtn">Delete Picture</button>
+                        </div>
+    
+                       
+                        <div class="profile-actions">
+                            <button id="editProfileBtn">Edit Profile</button>
+                            <button id="messageBtn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="edit-picture">
-                <button>Change profile picture</button>
-                <button>Delete picture</button>
-            </div>
-
         </div>
-    </div>
 
-
-</div>
-
+<script src="../JAVASCRIPT/profile.js"></script>
+    </body>
+    </html>
+    
 
 
     
