@@ -94,3 +94,16 @@ body {
 .edit-picture button {
     width: 230px;
 }
+
+
+@media (min-width:320px) and (max-width:480px){
+    .main-container{
+        width: 80% ;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .main-container{
+        width: 80% ;
+    }
+}

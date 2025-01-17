@@ -81,3 +81,16 @@ h1 {
 #sendMessageBtn:hover {
     background-color: #024300;
 }
+
+
+@media (min-width:320px) and (max-width:480px){
+    .main-container{
+        width: 80% ;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .main-container{
+        width: 80% ;
+    }
+}
