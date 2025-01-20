@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("email");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission for validation
+        e.preventDefault(); 
 
         const emailValue = emailInput.value.trim();
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // If valid, show success popup and redirect
+        
         alert("Reset link has been sent to your email address!");
 
-        // Redirect to Forgot Password page
-        window.location.href = "forgotpassword.html"; // Adjust the file name/path if needed
+        
+        window.location.href = "forgotpassword.html"; 
     });
 });

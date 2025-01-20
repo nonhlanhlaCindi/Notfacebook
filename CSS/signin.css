@@ -1,4 +1,4 @@
-/* -----------------body----------------------------- */
+
 body {
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* ------------------main div-------------------------- */
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
     margin-top: 150px;
 }
 
-/* -------------Logo Section----------------------*/
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ body {
     border-color:rgb(5, 24, 5);;
 }
 
-/* -------------Form ----------- */
+
 .FormInfo {
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ input:focus {
     border-color: blue;
 }
 
-/* -------------------------------Button---------------------- */
+
 button {
     background-color: #548854;
     color: white;
@@ -92,7 +92,7 @@ button:hover {
     transform: scale(1.06); 
 }
 
-/* --------------text---------------- */
+
 .forgotpassword {
     display: flex;
     flex-direction: row;
@@ -111,7 +111,7 @@ button:hover {
     color:rgb(172, 23, 73);
 }
 
-/* Register Link */
+
 .txtregister {
     display: flex;
     flex-direction: row;
@@ -152,7 +152,7 @@ h1:hover {
     color: rgb(71, 21, 3);
   }
 
-/* ----------------------Media Queries-------------------------- */
+
 @media (min-width:320px) and (max-width:480px){
     .main-container{
         width: 90%;

@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* ------------body----------------- */
+
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body{
     font-family: Arial, sans-serif;
 }
 
-/* ----------------navbar---------- */
+
 nav {
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ nav {
     color: white; 
 }
 
-/* -----------------Status view section-------------------------- */
+
 
 .status-container{
     display: flex;
@@ -109,11 +109,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 20%;
     height:200px;
     background-color:lightgrey;
     margin: 1%;
-    border-radius: 15%;
+    margin-left: 10px;
+    /* border-radius: 15%; */
 }
 .status img{
     width: 100px;
@@ -143,7 +144,7 @@ nav {
     margin-bottom: -15px;
 }
 
-/* -----------------Status post section-------------------------- */
+
 .status-section {
    
     border-radius: 8px;
@@ -205,15 +206,12 @@ nav {
     display: flex;
     flex-direction: row; 
     height: 100%; 
-    
     gap: 10px; 
     padding: 10px;
     
 }
 
 
-
-/* ----------main-person-div------------ */
 .main-person-div{
     display: flex;
     flex-direction: row;
@@ -283,7 +281,7 @@ nav {
     background-color: #052805;
 }
 
-/* -----------footer---------------------- */
+
 
 footer{
     background-color: white;
@@ -298,7 +296,7 @@ footer{
     height: 90px;
     
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px; 
@@ -351,11 +349,12 @@ footer{
 
 
 
-/* --------------------------- Media Queries-----------------------> */
+
+
 
 @media (min-width:150px) and (max-width:480px){
 
-/* ----navbar------ */
+
 body{
     width: auto;
 }
@@ -396,7 +395,7 @@ nav {
 
 }
 
-/* ------status section */
+
 
 .status-section {
    
@@ -408,7 +407,7 @@ nav {
     
 }
    
-/* ------footer---- */
+
 
     footer{
         width: 95%;
@@ -422,20 +421,64 @@ nav {
     height: 150px;
     background-color: #548854;
 }
-}
 
-/* ------status section */
-
-/* Container for all the people cards */
 .people-list {
     display: flex;
-    overflow-x: auto; /* Horizontal scrolling */
+    overflow-x: auto; 
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
 }
+    .status-section{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    background-color: white;
+    height: 250px;
+}
 
-/* Individual person card */
+
+.status-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.status-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.status-header h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #052805;
+}
+
+
+.status p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word; 
+}
+
+
+.status:hover {
+    transform: scale(1.02);
+    transition: transform, 0.2s ease-in-out;
+}
+
+
+
 .person-card {
     width: 200px;
     background-color: #fff;
@@ -443,22 +486,21 @@ nav {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex-shrink: 0; /* Prevent shrinking when scrolling */
+    flex-shrink: 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Profile image styling (rounded) */
+
 .profile-img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image fits within the circle */
+    object-fit: cover; 
     margin-bottom: 10px;
 }
 
-/* Person information below the image */
 .person-info h3 {
     font-size: 18px;
     margin: 5px 0;
@@ -470,7 +512,7 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Add Friend button styling */
+
 .add-friend {
     padding: 10px;
     background-color: #4CAF50;
@@ -497,71 +539,24 @@ nav {
     
 }
    
-/* ------footer---- */
 
-    footer{
-        width: 95%;
-        margin-top: 5%;
-    }
-
-
-
-
-/* -----------status container------------------------- */
+footer{
+    width: 95%;
+    margin-top: 5%;
+}
 
 #statusesContainer {
     margin-top: 20px;
-    width: 200px;
-}
+    width: 100%;
+
+} 
 
 
-.status {
+ .status {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px 15px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 7g00px;
+
+} 
 }
-
-
-.status-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.status-header img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-.status-header h4 {
-    margin: 0;
-    font-size: 14px;
-    color: #052805; /* Use your specified text color */
-}
-
-
-.status p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
-    word-wrap: break-word; /* Ensure long words or links wrap properly */
-}
-
-
-.status:hover {
-    transform: scale(1.02);
-    transition: transform 0.2s ease-in-out;
-}
-
