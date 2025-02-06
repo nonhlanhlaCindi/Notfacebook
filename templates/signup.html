@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/signup.css')}}">
 </head>
 
 <body>
 
     <div class="main-container">
         <div class="logo">
-            <img src="../RESOURCES/image.png" alt="Logo">
+            <img src="{{url_for('static', filename='images/image.png')}}" alt="Logo">
         </div>
     
-        <form id="registrationForm">
+        <form id="registrationForm" method="POST">
             <div class="txtregister">
                 <h1>SIGN UP</h1>
             </div>
@@ -25,27 +25,28 @@
     
             <div class="FormInfo">
                 <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Create your username">
+                <input type="text" id="username" name="username"  placeholder="Create your username">
     
                 <label for="email">Email address</label>
-                <input type="text" id="email" placeholder="Enter your email address">
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
     
                 <label for="cellphone">Cell phone number</label>
-                <input type="text" id="cellphone" placeholder="Enter your Cellphone number">
+                <input type="text" id="cellphone" name="cellphone" placeholder="Enter your Cellphone number">
     
                 <label for="password">Create Password</label>
-                <input type="password" id="password" placeholder="Create your Password">
+                <input type="password" id="password" name="password" placeholder="Create your Password">
     
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" placeholder="Enter your password again">
+                <input type="password" id="confirmPassword" name="confirmPassword"  placeholder="Enter your password again">
     
                 <div class="Registerbutton">
                     <button type="submit">Sign up</button>
                 </div>
     
                 <div class="txtregister">
-                    <span>Already have an account?</span><a href="../HTML/signin.html">Login</a>
+                    <span>Already have an account?</span><a href="{{ url_for('signin') }}">Login</a>
                 </div>
+                
             </div>
            
         </form>

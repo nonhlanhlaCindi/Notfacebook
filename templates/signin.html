@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/signin.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/signin.css')}}">
     <title>SignIn</title>
 </head>
 <body>
     <div class="main-container">
 
         <div class="logo">
-            <img src="../RESOURCES/image.png" alt="App Logo">
+            <img src="{{url_for('static', filename='images/image.png')}}" alt="App Logo">
             <h1>Sign In</h1>
         </div>
 
-        <form class="form-main" id="signInForm">
+        <form class="form-main" id="signInForm" method="POST">
             <div class="txtregister">
                 <p>Enter your details to sign in!</p>
             </div>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="txtregister">
-                    <span>Don't have an account?</span><a href="../HTML/signup.html">Sign Up</a>
+                    <span>Don't have an account?</span><a href="{{ url_for('signup') }}">Sign Up</a>
                 </div>
             </div>
         </form>
