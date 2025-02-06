@@ -4,13 +4,18 @@ from werkzeug.security import generate_password_hash, check_password_hash  # typ
 from database import get_db_connection  # Ensure your database connection is correct
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.secret_key = 'your_secret_key'  # Make sure this is a secure key
 
 # Splash route, which redirects to signup after 3 seconds
 @app.route('/')
 def splash():
-    time.sleep(3)  # Wait for 3 seconds before redirecting
-    return redirect(url_for('signup'))
+    # Check if the splash page has already been shown in the session
+    if 'splash_shown' in session:
+        return redirect(url_for('signup'))  # Skip splash and redirect to signup
+    else:
+        session['splash_shown'] = True  # Mark splash page as shown
+        time.sleep(3)  # Wait for 3 seconds before redirecting
+        return redirect(url_for('signup'))  # Redirect to signup page after splash
 
 # Signup route with both GET and POST handling
 @app.route('/signup', methods=['GET', 'POST'])
