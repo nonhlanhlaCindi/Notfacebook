@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Screen</title>
-    <link rel="stylesheet" href="../CSS/splash.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/splash.css') }}">
+
 </head>
 <body>
     
     <div id="splash-screen" class="splash">
-        <img src="../RESOURCES/image.png" alt="App Logo" class="splash-logo">
+        <img src="{{ url_for('static', filename='images/image.png') }}" alt="App logo"  class="splash-logo">
+       
     </div>
     <div id="main-content" class="hidden">
         <h1>Welcome to Not Facebook</h1>
