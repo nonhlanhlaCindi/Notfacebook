@@ -97,5 +97,12 @@ def messages():
 
     return render_template('messages.html', messages=messages)
 
+@app.route('/profile')
+def profile():
+    if 'user_id' not in session:
+        return redirect(url_for('signin'))
+
+    return render_template('profile.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
