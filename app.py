@@ -13,7 +13,7 @@ def splash():
     if 'splash_shown' in session:
         return redirect(url_for('signup'))  # Skip splash and redirect to signup
     else:
-        session['splash_shown'] = True  # Mark splash page as shown
+        session['splash_shown'] = True 
         time.sleep(3) 
         return redirect(url_for('signup'))  
 
