@@ -89,8 +89,21 @@ def dashboard():
     if 'user_id' not in session:
         return redirect(url_for('signin'))  # Redirect to signin if not logged in
 
-    return render_template('dashboard.html')
+    return render_template('notfacebook.html')
+
+@app.route('/profile')
+def profile():
+    if 'user_id' not in session:
+        return redirect(url_for('signin'))  # Redirect to signin if not logged in
+
+    return render_template('profile.html')
+
+@app.route('/messages')
+def messages():
+    if 'user_id' not in session:
+        return redirect(url_for('signin'))  # Redirect to signin if not logged in
+
+    return render_template('messages.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
-ty
