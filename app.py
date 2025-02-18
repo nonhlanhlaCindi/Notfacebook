@@ -97,7 +97,7 @@ def profile():
         return redirect(url_for('signin'))  # Redirect to signin if not logged in
 
     return render_template('profile.html')
- # Redirect to signin if not logged in
+ # Redirect to messages if not logged in
 @app.route('/messages')
 def messages():
     if 'user_id' not in session:
