@@ -14,7 +14,7 @@ def splash():
         return redirect(url_for('signup'))  # Skip splash and redirect to signup
     else:
         session['splash_shown'] = True  # Mark splash page as shown
-        time.sleep(3)  # Wait for 3 seconds before redirecting
+        time.sleep(3) 
         return redirect(url_for('signup'))  
 
 # Signup route with both GET and POST handling
