@@ -15,7 +15,7 @@ def splash():
     else:
         session['splash_shown'] = True  # Mark splash page as shown
         time.sleep(3)  # Wait for 3 seconds before redirecting
-        return redirect(url_for('signup'))  # Redirect to signup page after splash
+        return redirect(url_for('signup'))  
 
 # Signup route with both GET and POST handling
 @app.route('/signup', methods=['GET', 'POST'])
@@ -74,11 +74,14 @@ def signin():
         user = cursor.fetchone()
         cursor.close()
         conn.close()
-
+        
+        
+ # user[3] is the password column
+# Storing user ID in the session
   # Redirect to a dashboard page
  # Redirect to a dashboard page
-        if user and check_password_hash(user[3], password):  # user[3] is the password column
-            session['user_id'] = user[0]  # Storing user ID in the session
+        if user and check_password_hash(user[3], password): 
+            session['user_id'] = user[0]  
             return redirect(url_for('dashboard'))  
         else:
             return "Invalid email or password"
