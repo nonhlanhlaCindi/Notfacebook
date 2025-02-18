@@ -91,13 +91,18 @@ def dashboard():
 
     return render_template('notfacebook.html')
 
+
+
+# Redirect to profile page if not logged in
 @app.route('/profile')
 def profile():
     if 'user_id' not in session:
-        return redirect(url_for('signin'))  # Redirect to signin if not logged in
+        return redirect(url_for('signin'))  
 
     return render_template('profile.html')
- # Redirect to messages if not logged in
+
+
+ # Redirect to messages page if not logged in
 @app.route('/messages')
 def messages():
     if 'user_id' not in session:
