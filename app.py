@@ -75,11 +75,11 @@ def signin():
         cursor.close()
         conn.close()
 
-
+  # Redirect to a dashboard page
  # Redirect to a dashboard page
         if user and check_password_hash(user[3], password):  # user[3] is the password column
             session['user_id'] = user[0]  # Storing user ID in the session
-            return redirect(url_for('dashboard'))  # Redirect to a dashboard page
+            return redirect(url_for('dashboard'))  
         else:
             return "Invalid email or password"
 
