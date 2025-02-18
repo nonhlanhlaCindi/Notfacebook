@@ -11,7 +11,7 @@ app.secret_key = 'your_secret_key'  # Make sure this is a secure key
 def splash():
     # Check if the splash page has already been shown in the session
     if 'splash_shown' in session:
-        return redirect(url_for('signup'))  # Skip splash and redirect to signup
+        return redirect(url_for('signup')) 
     else:
         session['splash_shown'] = True 
         time.sleep(3) 
