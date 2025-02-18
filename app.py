@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash  # typ
 from database import get_db_connection  # Ensure your database connection is correct
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Make sure this is a secure key
+app.secret_key = 'your_secret_key'  
 
 # Splash route, which redirects to signup after 3 seconds
 @app.route('/')
