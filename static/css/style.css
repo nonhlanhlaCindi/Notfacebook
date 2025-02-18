@@ -431,7 +431,7 @@ nav {
 /* Container for all the people cards */
 .people-list {
     display: flex;
-    overflow-x: auto; /* Horizontal scrolling */
+    overflow-x: auto;
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
