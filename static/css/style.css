@@ -558,7 +558,7 @@ nav {
     margin: 0;
     font-size: 14px;
     color: #333;
-    word-wrap: break-word; /* Ensure long words or links wrap properly */
+    word-wrap: break-word;
 }
 
 
@@ -566,4 +566,16 @@ nav {
     transform: scale(1.02);
     transition: transform 0.2s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
