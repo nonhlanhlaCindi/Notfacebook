@@ -1,7 +1,7 @@
 import time  # Import time explicitly
 from flask import Flask, render_template, request, redirect, url_for, session  # type: ignore
 from werkzeug.security import generate_password_hash, check_password_hash  # type: ignore
-from database import get_db_connection  # Ensure your database connection is correct
+from database import get_db_connection 
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  
