@@ -84,6 +84,7 @@ def signin():
     return render_template('signin.html')
 
 # Example Dashboard route after login (optional)
+ # Redirect to signin if not logged in
 @app.route('/dashboard')
 def dashboard():
     if 'user_id' not in session:
