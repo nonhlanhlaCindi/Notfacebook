@@ -456,7 +456,7 @@ nav {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image fits within the circle */
+    object-fit: cover; 
     margin-bottom: 10px;
 }
 
